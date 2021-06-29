@@ -1,0 +1,18 @@
+2021-06-28T17:29:23|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\FastFMT-micro\anaconda3\lib\site-packages\ScopeFoundry\logged_quantity.py", line 241, in update_value
+    self.hardware_set_func(self.val)
+  File "C:\LabPrograms\Python\QImaging_ScopeFoundry\camera_device.py", line 81, in set_exposure
+    self.cam.settings.exposure = exposure - estimated_readout_lag
+  File "C:\LabPrograms\Python\QImaging_ScopeFoundry\qimaging_dll.py", line 1115, in __setattr__
+    self.SetParam(paramKey,convTo(value))
+  File "C:\LabPrograms\Python\QImaging_ScopeFoundry\qimaging_dll.py", line 896, in SetParam
+    _check_error(_dll.QCam_SetParam(ctypes.pointer(self._settings),
+  File "C:\LabPrograms\Python\QImaging_ScopeFoundry\qimaging_dll.py", line 750, in _check_error
+    raise Error(errcode)
+qimaging_dll.Error: Invalid parameter value
+
+2021-06-28T17:57:48|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\Users\FastFMT-micro\anaconda3\lib\site-packages\pyqtgraph\imageview\ImageView.py", line 424, in keyPressEvent
+    fps = (self.getProcessedImage().shape[0]-1) / (self.tVals[-1] - self.tVals[0])
+AttributeError: 'ImageView' object has no attribute 'tVals'
+
